@@ -51,7 +51,14 @@ localStorage.removeItem(): Deletes specific tasks.
 Screenshots
 
 Adding
+![adding](https://github.com/user-attachments/assets/e27053bc-81b2-4000-8da2-f69e5c9592b5)
+![adding 2](https://github.com/user-attachments/assets/abde9e7e-51ca-4b08-9c5d-b5ed8ea7402a)
+
 
 Deleting
+![deleting](https://github.com/user-attachments/assets/edade365-99ff-4bf6-81e0-0833715cdc72)
+
 
 Editing
+![editing](https://github.com/user-attachments/assets/beda0509-ddc2-430e-8fbe-0fcf7e47bd31)
+
