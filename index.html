@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,4 +11,221 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua | BSIT Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Joshua Almasco</a>
+                <button class="hamburger" aria-label="Toggle navigation menu">☰</button>
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#todo" class="nav-link">To-Do</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="hero-highlight">Joshua</span></h1>
+                <p>A passionate 3rd Year BSIT Student studying web development, design, and technology.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="image/josh.jpg" alt="Joshua's Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Joshua Almasco, a 3rd year Bachelor of Science in Information Technology (BSIT) student with a passion for technology and innovation.</p>
+                    <p>I'm enthusiastic about web development, software design, and creating digital solutions that make a positive impact. My academic journey has equipped me with a solid foundation in programming, database management, and system analysis.</p>
+                    <p>When I'm not coding or studying, you can find me on the basketball court, listening to music, watching movies, or enjoying mobile games. I believe in balancing technical skills with creative pursuits, which helps me approach problems from different perspectives.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">HTML</div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">CSS</div>
+                            <span>CSS3 & Frameworks</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">JS</div>
+                            <span>Javascript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">TW</div>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">CM</div>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">PS</div>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">TM</div>
+                            <span>Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2>My Hobbies</h2>
+            <div class="hobbies-flex">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏀</div>
+                    <h3>Basketball</h3>
+                    <p>I enjoy playing basketball with friends, which helps me stay active and develop teamwork skills.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎵</div>
+                    <h3>Music</h3>
+                    <p>Listening to different genres of music helps me relax and stay focused during coding sessions.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎬</div>
+                    <h3>Movies</h3>
+                    <p>I enjoy watching movies in various genres, from action and sci-fi to documentaries.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎮</div>
+                    <h3>Mobile Gaming</h3>
+                    <p>Playing mobile games helps me unwind and also inspires me in UI/UX design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="todo" class="todo">
+        <div class="container">
+            <h2>To-Do List</h2>
+            <form id="todo-form" class="todo-container" onsubmit="event.preventDefault(); addTask();">
+                <div class="form-group">
+                    <label for="todo-input">Task:</label>
+                    <input type="text" id="todo-input" class="form-control" placeholder="Add a new task..." required>
+                </div>
+                <button type="submit" class="btn">Add Task</button>
+    
+                <div class="filters">
+                    <button type="button" class="filter-option active" data-filter="all">All</button>
+                    <button type="button" class="filter-option" data-filter="active">Active</button>
+                    <button type="button" class="filter-option" data-filter="completed">Completed</button>
+                    <button type="button" id="clear-btn">Clear Completed</button>
+                </div>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <p>Email: joshuac.almasco@gmail.com</p>
+                    <p>Location: Antipolo, Rizal Philippines</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="sr-only">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+                <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+            </div>
+            <p>&copy; 2025 Joshua. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+>>>>>>> 1f81954c9c48629e04aadb09f70d163bceab85fe
 </html>
